@@ -41,11 +41,10 @@
                 tools:ignore="MissingConstraints" />
 
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/materialCardView"
+                android:id="@+id/cv_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                app:cardBackgroundColor="@color/card_view_back_color"
                 app:layout_anchorGravity="center"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
@@ -101,35 +100,37 @@
             </com.google.android.material.card.MaterialCardView>
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btn_login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-25dp"
                 android:text="Login"
                 app:layout_anchorGravity="center"
-                app:layout_constraintEnd_toEndOf="@+id/materialCardView"
-                app:layout_constraintStart_toStartOf="@+id/materialCardView"
-                app:layout_constraintTop_toBottomOf="@+id/materialCardView"
+                app:layout_constraintEnd_toEndOf="@+id/cv_login"
+                app:layout_constraintStart_toStartOf="@+id/cv_login"
+                app:layout_constraintTop_toBottomOf="@+id/cv_login"
                 tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Don-t have account? "
+                android:text="Don't have account? "
                 android:layout_marginEnd="30dp"
-                app:layout_constraintEnd_toEndOf="@+id/button"
-                app:layout_constraintStart_toStartOf="@+id/button"
-                app:layout_constraintTop_toBottomOf="@+id/button" />
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_login"
+                app:layout_constraintStart_toStartOf="@+id/btn_login"
+                app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
             <TextView
+                android:id="@+id/tv_signup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="SIGN UP"
                 android:textColor="#DB3D91"
-                app:layout_constraintStart_toEndOf="@+id/textView"
-                app:layout_constraintTop_toBottomOf="@+id/button"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textView"
+                app:layout_constraintStart_toEndOf="@+id/textView" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 
