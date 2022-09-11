@@ -4,8 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.madpractical3_21012022022.databinding.ActivityLoginBinding
-import com.example.madpractical3_21012022022.databinding.ActivityMainBinding
-
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
@@ -25,6 +23,12 @@ class LoginActivity : AppCompatActivity() {
                 }
             }
             return@setOnItemSelectedListener true
+        }
+        binding.tvSignup.setOnClickListener{
+            Intent(this,RegistrationActivity::class.java).apply {
+                startActivity(this)
+            }
+
         }
     }
 }

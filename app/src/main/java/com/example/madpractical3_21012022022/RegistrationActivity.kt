@@ -3,8 +3,6 @@ package com.example.madpractical3_21012022022
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.madpractical3_21012022022.databinding.ActivityMainBinding
-
 import com.example.madpractical3_21012022022.databinding.ActivityRegistrationBinding
 
 class RegistrationActivity : AppCompatActivity() {
@@ -25,6 +23,10 @@ class RegistrationActivity : AppCompatActivity() {
                 }
             }
             return@setOnItemSelectedListener true
+        }
+
+        binding.tvLogin.setOnClickListener{
+            Intent(this,LoginActivity::class.java).apply {startActivity(this)}
         }
     }
 }

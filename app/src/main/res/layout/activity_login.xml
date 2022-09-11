@@ -141,7 +141,4 @@
         app:layout_anchor="@+id/nestedScrollView"
         app:layout_anchorGravity="bottom|center"
         app:menu="@menu/navigation_menu" />
-
-
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

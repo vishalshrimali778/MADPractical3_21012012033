@@ -12,10 +12,8 @@
         <!--<item name="colorSurface">@color/purple_200</item>-->
         <!-- Status bar color. -->
         <item name="android:navigationBarColor">@android:color/transparent</item>
-
         <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
         <!-- Customize your theme here. -->
     </style>
     <style name="Theme.MAD_Login_UI_Practical" parent="Base.MAD_Login_UI_Practical" />
-
 </resources>
