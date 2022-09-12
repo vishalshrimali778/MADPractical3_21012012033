@@ -17,9 +17,7 @@
             android:noHistory="true"
             android:label="Registration UI-MAD Practical"
             android:name=".RegistrationActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false"/>
         <activity
             android:noHistory="true"
             android:label="Login UI-MAD Practical"
@@ -31,12 +29,5 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name=".MainActivity"
-            android:exported="false">
-
-        </activity>
     </application>
-
 </manifest>
